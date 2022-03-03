@@ -1,1 +1,2 @@
-export default function deprecatedPropType<T>(validator: T, reason: string): T;
+export type deprecatedPropType = <T>(validator: T, reason: string) => T;
+export default deprecatedPropType;

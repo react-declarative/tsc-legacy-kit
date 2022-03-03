@@ -3,4 +3,5 @@
  * Use `MuiError` from `@mui/utils/macros/MuiError.macro` instead.
  * @param {number} code
  */
-export default function formatMuiErrorMessage(code: number): string;
+export type formatMuiErrorMessage = (code: number) => string;
+export default formatMuiErrorMessage;

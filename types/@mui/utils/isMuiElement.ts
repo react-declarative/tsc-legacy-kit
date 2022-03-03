@@ -1,1 +1,2 @@
-export default function isMuiElement(element: any, muiNames: readonly string[]): boolean;
+export type isMuiElement = (element: any, muiNames: readonly string[]) => boolean;
+export default isMuiElement;

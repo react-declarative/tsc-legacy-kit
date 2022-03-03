@@ -2,4 +2,5 @@ export declare function isPlainObject(item: unknown): item is Record<keyof any, 
 export interface DeepmergeOptions {
     clone?: boolean;
 }
-export default function deepmerge<T>(target: T, source: unknown, options?: DeepmergeOptions): T;
+export type deepmerge = <T>(target: T, source: unknown, options?: DeepmergeOptions) => T;
+export default deepmerge;

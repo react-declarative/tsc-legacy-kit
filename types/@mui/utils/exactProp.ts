@@ -1,2 +1,3 @@
 import { ValidationMap } from 'prop-types';
-export default function exactProp<T>(propTypes: ValidationMap<T>): ValidationMap<T>;
+export type exactProp = <T>(propTypes: ValidationMap<T>) => ValidationMap<T>;
+export default exactProp;

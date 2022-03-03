@@ -251,7 +251,7 @@ export declare type AutocompleteGetTagProps = ({ index }: {
     tabIndex: -1;
     onDelete: (event: any) => void;
 };
-export default function useAutocomplete<T, Multiple extends boolean | undefined = undefined, DisableClearable extends boolean | undefined = undefined, FreeSolo extends boolean | undefined = undefined>(props: UseAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>): {
+export type useAutocomplete = <T, Multiple extends boolean | undefined = undefined, DisableClearable extends boolean | undefined = undefined, FreeSolo extends boolean | undefined = undefined>(props: UseAutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) => {
     getRootProps: () => React.HTMLAttributes<HTMLDivElement>;
     getInputProps: () => React.HTMLAttributes<HTMLInputElement>;
     getInputLabelProps: () => Omit<React.HTMLAttributes<HTMLLabelElement>, 'color'>;
@@ -277,3 +277,4 @@ export default function useAutocomplete<T, Multiple extends boolean | undefined 
      */
     groupedOptions: T[] | Array<AutocompleteGroupedOption<T>>;
 };
+export default useAutocomplete;
