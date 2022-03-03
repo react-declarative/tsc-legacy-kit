@@ -33,9 +33,9 @@ export interface Root {
  *
  * @see https://reactjs.org/docs/concurrent-mode-reference.html#createroot
  */
-export function createRoot(container: Element | Document | DocumentFragment | Comment, options?: RootOptions): Root;
+export declare function createRoot(container: Element | Document | DocumentFragment | Comment, options?: RootOptions): Root;
 
-export function hydrateRoot(
+export declare function hydrateRoot(
     container: Element | Document | DocumentFragment | Comment,
     initialChildren: React.ReactChild | Iterable<React.ReactNode>,
     options?: HydrationOptions,

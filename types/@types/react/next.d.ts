@@ -68,7 +68,7 @@ declare module '.' {
      *
      * @see https://reactjs.org/docs/concurrent-mode-reference.html#usedeferredvalue
      */
-    export function useDeferredValue<T>(value: T): T;
+    export declare function useDeferredValue<T>(value: T): T;
 
     /**
      * Allows components to avoid undesirable loading states by waiting for content to load
@@ -87,16 +87,16 @@ declare module '.' {
      *
      * @see https://reactjs.org/docs/concurrent-mode-reference.html#usetransition
      */
-    export function useTransition(): [boolean, TransitionStartFunction];
+    export declare function useTransition(): [boolean, TransitionStartFunction];
 
     /**
      * Similar to `useTransition` but allows uses where hooks are not available.
      *
      * @param callback A _synchronous_ function which causes state updates that can be deferred.
      */
-    export function startTransition(scope: TransitionFunction): void;
+    export declare function startTransition(scope: TransitionFunction): void;
 
-    export function useId(): string;
+    export declare function useId(): string;
 
     /**
      * this should be an internal type
@@ -111,7 +111,7 @@ declare module '.' {
      * @param source A source could be anything as long as they can be subscribed to and have a "version".
      * @param getVersion A function returns a value which will change whenever part of the source changes.
      */
-    export function unstable_createMutableSource<T>(source: T, getVersion: () => any): MutableSource<T>;
+    export declare function unstable_createMutableSource<T>(source: T, getVersion: () => any): MutableSource<T>;
 
     /**
      * useMutableSource() enables React components to safely and efficiently read from a mutable external source in Concurrent Mode.
@@ -123,7 +123,7 @@ declare module '.' {
      *
      * @see https://github.com/reactjs/rfcs/blob/master/text/0147-use-mutable-source.md
      */
-    export function unstable_useMutableSource<T, TResult extends unknown>(MutableSource: MutableSource<T>, getSnapshot: (source: T) => TResult, subscribe: MutableSourceSubscribe<T>): TResult;
+    export declare function unstable_useMutableSource<T, TResult extends unknown>(MutableSource: MutableSource<T>, getSnapshot: (source: T) => TResult, subscribe: MutableSourceSubscribe<T>): TResult;
 
     /**
      * @param effect Imperative function that can return a cleanup function
@@ -131,7 +131,7 @@ declare module '.' {
      *
      * @see https://github.com/facebook/react/pull/21913
      */
-     export function useInsertionEffect(effect: EffectCallback, deps?: DependencyList): void;
+     export declare function useInsertionEffect(effect: EffectCallback, deps?: DependencyList): void;
 
     /**
      * @param subscribe
@@ -140,7 +140,7 @@ declare module '.' {
      * @see https://github.com/reactwg/react-18/discussions/86
      */
     // keep in sync with `useSyncExternalStore` from `use-sync-external-store`
-    export function useSyncExternalStore<Snapshot>(
+    export declare function useSyncExternalStore<Snapshot>(
         subscribe: (onStoreChange: () => void) => () => void,
         getSnapshot: () => Snapshot,
         getServerSnapshot?: () => Snapshot,

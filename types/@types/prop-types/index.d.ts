@@ -29,7 +29,7 @@ export type ReactNodeLike =
     | null
     | undefined;
 
-export const nominalTypeHack: unique symbol;
+export declare const nominalTypeHack: unique symbol;
 
 export type IsOptional<T> = undefined extends T ? true : false;
 
@@ -55,24 +55,24 @@ export type InferProps<V> =
     & InferPropsInner<Pick<V, RequiredKeys<V>>>
     & Partial<InferPropsInner<Pick<V, OptionalKeys<V>>>>;
 
-export const any: Requireable<any>;
-export const array: Requireable<any[]>;
-export const bool: Requireable<boolean>;
-export const func: Requireable<(...args: any[]) => any>;
-export const number: Requireable<number>;
-export const object: Requireable<object>;
-export const string: Requireable<string>;
-export const node: Requireable<ReactNodeLike>;
-export const element: Requireable<ReactElementLike>;
-export const symbol: Requireable<symbol>;
-export const elementType: Requireable<ReactComponentLike>;
-export function instanceOf<T>(expectedClass: new (...args: any[]) => T): Requireable<T>;
-export function oneOf<T>(types: ReadonlyArray<T>): Requireable<T>;
-export function oneOfType<T extends Validator<any>>(types: T[]): Requireable<NonNullable<InferType<T>>>;
-export function arrayOf<T>(type: Validator<T>): Requireable<T[]>;
-export function objectOf<T>(type: Validator<T>): Requireable<{ [K in keyof any]: T; }>;
-export function shape<P extends ValidationMap<any>>(type: P): Requireable<InferProps<P>>;
-export function exact<P extends ValidationMap<any>>(type: P): Requireable<Required<InferProps<P>>>;
+export declare const any: Requireable<any>;
+export declare const array: Requireable<any[]>;
+export declare const bool: Requireable<boolean>;
+export declare const func: Requireable<(...args: any[]) => any>;
+export declare const number: Requireable<number>;
+export declare const object: Requireable<object>;
+export declare const string: Requireable<string>;
+export declare const node: Requireable<ReactNodeLike>;
+export declare const element: Requireable<ReactElementLike>;
+export declare const symbol: Requireable<symbol>;
+export declare const elementType: Requireable<ReactComponentLike>;
+export declare function instanceOf<T>(expectedClass: new (...args: any[]) => T): Requireable<T>;
+export declare function oneOf<T>(types: ReadonlyArray<T>): Requireable<T>;
+export declare function oneOfType<T extends Validator<any>>(types: T[]): Requireable<NonNullable<InferType<T>>>;
+export declare function arrayOf<T>(type: Validator<T>): Requireable<T[]>;
+export declare function objectOf<T>(type: Validator<T>): Requireable<{ [K in keyof any]: T; }>;
+export declare function shape<P extends ValidationMap<any>>(type: P): Requireable<InferProps<P>>;
+export declare function exact<P extends ValidationMap<any>>(type: P): Requireable<Required<InferProps<P>>>;
 
 /**
  * Assert that the values match with the type specs.
@@ -84,9 +84,9 @@ export function exact<P extends ValidationMap<any>>(type: P): Requireable<Requir
  * @param componentName Name of the component for error messages
  * @param getStack Returns the component stack
  */
-export function checkPropTypes(typeSpecs: any, values: any, location: string, componentName: string, getStack?: () => any): void;
+export declare function checkPropTypes(typeSpecs: any, values: any, location: string, componentName: string, getStack?: () => any): void;
 
 /**
  * Only available if NODE_ENV=production
  */
-export function resetWarningCache(): void;
+export declare function resetWarningCache(): void;

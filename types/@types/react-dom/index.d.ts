@@ -26,33 +26,33 @@ import {
     DOMAttributes, DOMElement, ReactNode, ReactPortal
 } from 'react';
 
-export function findDOMNode(instance: ReactInstance | null | undefined): Element | null | Text;
-export function unmountComponentAtNode(container: Element | DocumentFragment): boolean;
+export declare function findDOMNode(instance: ReactInstance | null | undefined): Element | null | Text;
+export declare function unmountComponentAtNode(container: Element | DocumentFragment): boolean;
 
-export function createPortal(children: ReactNode, container: Element, key?: null | string): ReactPortal;
+export declare function createPortal(children: ReactNode, container: Element, key?: null | string): ReactPortal;
 
-export const version: string;
-export const render: Renderer;
-export const hydrate: Renderer;
+export declare const version: string;
+export declare const render: Renderer;
+export declare const hydrate: Renderer;
 
-export function flushSync<R>(fn: () => R): R;
-export function flushSync<A, R>(fn: (a: A) => R, a: A): R;
+export declare function flushSync<R>(fn: () => R): R;
+export declare function flushSync<A, R>(fn: (a: A) => R, a: A): R;
 
-export function unstable_batchedUpdates<A, B>(callback: (a: A, b: B) => any, a: A, b: B): void;
-export function unstable_batchedUpdates<A>(callback: (a: A) => any, a: A): void;
-export function unstable_batchedUpdates(callback: () => any): void;
+export declare function unstable_batchedUpdates<A, B>(callback: (a: A, b: B) => any, a: A, b: B): void;
+export declare function unstable_batchedUpdates<A>(callback: (a: A) => any, a: A): void;
+export declare function unstable_batchedUpdates(callback: () => any): void;
 
-export function unstable_renderSubtreeIntoContainer<T extends Element>(
+export declare function unstable_renderSubtreeIntoContainer<T extends Element>(
     parentComponent: Component<any>,
     element: DOMElement<DOMAttributes<T>, T>,
     container: Element,
     callback?: (element: T) => any): T;
-export function unstable_renderSubtreeIntoContainer<P, T extends Component<P, ComponentState>>(
+export declare function unstable_renderSubtreeIntoContainer<P, T extends Component<P, ComponentState>>(
     parentComponent: Component<any>,
     element: CElement<P, T>,
     container: Element,
     callback?: (component: T) => any): T;
-export function unstable_renderSubtreeIntoContainer<P>(
+export declare function unstable_renderSubtreeIntoContainer<P>(
     parentComponent: Component<any>,
     element: ReactElement<P>,
     container: Element,

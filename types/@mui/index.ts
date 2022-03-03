@@ -1,5 +1,5 @@
 import ButtonDefault from '@mui/material/Button';
 
-export namespace SDK {
-    export const Button = ButtonDefault;
+export declare namespace SDK {
+    export declare const Button = ButtonDefault;
 }
