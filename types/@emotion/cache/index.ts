@@ -41,4 +41,6 @@ export interface Options {
   insertionPoint?: HTMLElement
 }
 
-export default function createCache(options: Options): EmotionCache
+export type createCache = (options: Options) => EmotionCache;
+
+export default createCache;

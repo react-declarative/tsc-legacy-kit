@@ -1,1 +1,2 @@
-export default function ownerWindow(node: Node | undefined): Window;
+export type ownerWindow = (node: Node | undefined) => Window;
+export default ownerWindow;

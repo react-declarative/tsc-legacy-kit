@@ -92,5 +92,5 @@ declare module '.' {
      * @see https://reactjs.org/docs/concurrent-mode-reference.html#suspenselist
      * @see https://reactjs.org/docs/concurrent-mode-patterns.html#suspenselist
      */
-    export declare const SuspenseList: ExoticComponent<SuspenseListProps>;
+    export const SuspenseList: ExoticComponent<SuspenseListProps>;
 }

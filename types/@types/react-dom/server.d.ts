@@ -18,14 +18,14 @@ import { ReactElement } from 'react';
  * React will preserve it and only attach event handlers, allowing you
  * to have a very performant first-load experience.
  */
-export declare function renderToString(element: ReactElement): string;
+export function renderToString(element: ReactElement): string;
 
 /**
  * Render a React element to its initial HTML. Returns a Readable stream that outputs
  * an HTML string. The HTML output by this stream is exactly equal to what
  * `ReactDOMServer.renderToString()` would return.
  */
-export declare function renderToNodeStream(element: ReactElement): NodeJS.ReadableStream;
+export function renderToNodeStream(element: ReactElement): NodeJS.ReadableStream;
 
 /**
  * Similar to `renderToString`, except this doesn't create extra DOM attributes
@@ -33,15 +33,15 @@ export declare function renderToNodeStream(element: ReactElement): NodeJS.Readab
  * to use React as a simple static page generator, as stripping away the extra
  * attributes can save lots of bytes.
  */
-export declare function renderToStaticMarkup(element: ReactElement): string;
+export function renderToStaticMarkup(element: ReactElement): string;
 
 /**
  * Similar to `renderToNodeStream`, except this doesn't create extra DOM attributes
  * such as `data-reactid`, that React uses internally. The HTML output by this stream
  * is exactly equal to what `ReactDOMServer.renderToStaticMarkup()` would return.
  */
-export declare function renderToStaticNodeStream(element: ReactElement): NodeJS.ReadableStream;
+export function renderToStaticNodeStream(element: ReactElement): NodeJS.ReadableStream;
 
-export declare const version: string;
+export const version: string;
 
 export as namespace ReactDOMServer;

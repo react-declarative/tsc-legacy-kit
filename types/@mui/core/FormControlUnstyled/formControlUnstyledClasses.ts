@@ -4,7 +4,7 @@ export interface FormControlUnstyledClasses {
     /** Class applied to the root element if `disabled={true}`. */
     disabled: string;
 }
-export type FormControlUnstyledClassKey = keyof FormControlUnstyledClasses;
+export declare type FormControlUnstyledClassKey = keyof FormControlUnstyledClasses;
 export declare function getFormControlUnstyledUtilityClasses(slot: string): string;
 declare const formControlUnstyledClasses: FormControlUnstyledClasses;
 export default formControlUnstyledClasses;

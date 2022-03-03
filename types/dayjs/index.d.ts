@@ -1,4 +1,4 @@
-import { ILocale } from './locale';
+/// <reference path="./locale/index.d.ts" />
 
 export = dayjs;
 
@@ -8,7 +8,7 @@ declare function dayjs (date?: dayjs.ConfigType, format?: dayjs.OptionType, stri
 
 declare function dayjs (date?: dayjs.ConfigType, format?: dayjs.OptionType, locale?: string, strict?: boolean): dayjs.Dayjs
 
-namespace dayjs {
+declare namespace dayjs {
   interface ConfigTypeMap {
     default: string | number | Date | Dayjs | null | undefined
   }
@@ -30,7 +30,7 @@ namespace dayjs {
   export type OpUnitType = UnitType | "week" | "weeks" | 'w';
   export type QUnitType = UnitType | "quarter" | "quarters" | 'Q';
   export type ManipulateType = Omit<OpUnitType, 'date' | 'dates'>;
-  export declare class Dayjs {
+  class Dayjs {
     constructor (config?: ConfigType)
     /**
      * All Day.js objects are immutable. Still, `dayjs#clone` can create a clone of the current object if you need one.
@@ -417,13 +417,13 @@ namespace dayjs {
 
   export type PluginFunc<T = unknown> = (option: T, c: typeof Dayjs, d: typeof dayjs) => void
 
-  export declare function extend<T = unknown>(plugin: PluginFunc<T>, option?: T): Dayjs
+  export function extend<T = unknown>(plugin: PluginFunc<T>, option?: T): Dayjs
 
-  export declare function locale(preset?: string | ILocale, object?: Partial<ILocale>, isLocal?: boolean): string
+  export function locale(preset?: string | ILocale, object?: Partial<ILocale>, isLocal?: boolean): string
 
-  export declare function isDayjs(d: any): d is Dayjs
+  export function isDayjs(d: any): d is Dayjs
 
-  export declare function unix(t: number): Dayjs
+  export function unix(t: number): Dayjs
 
   const Ls : { [key: string] :  ILocale }
 }

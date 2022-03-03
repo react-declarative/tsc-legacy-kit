@@ -1,6 +1,6 @@
 import { OverrideProps } from '@mui/types';
 import * as React from 'react';
-export type NativeFormControlElement = HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+export declare type NativeFormControlElement = HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
 export interface FormControlUnstyledComponentsPropsOverrides {
 }
 export interface FormControlUnstyledOwnProps {

@@ -52,4 +52,6 @@ export interface Emotion {
   ): string
 }
 
-export default function createEmotion(options?: Options): Emotion
+export type createEmotion = (options?: Options) => Emotion
+
+export default createEmotion;

@@ -1,5 +1,2 @@
-*.js
-*.json
-*.md
-*.mdx
 node_modules
+.DS_Store
