@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outFile": "./_dist/@popperjs.d.ts",
+    },
+    "exclude": [
+        "./_dist/@popperjs.d.ts",
+    ],
+    "extends": "../tsconfig.json"
+}
