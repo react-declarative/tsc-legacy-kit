@@ -1,3 +1,2 @@
-import PropTypes from 'prop-types';
-declare const _default: PropTypes.Validator<PropTypes.ReactComponentLike | null | undefined>;
+declare const _default: any;
 export default _default;

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { BasePickerProps } from '../internal/pickers/typings/BasePicker';
 import { WrapperVariant } from '../internal/pickers/wrappers/WrapperVariantContext';
 import { DateRangeInputProps } from './DateRangePickerInput';
@@ -35,10 +34,4 @@ interface DateRangePickerViewProps<TDate> extends CurrentlySelectingRangeEndProp
  * @ignore - internal component.
  */
 export declare function DateRangePickerView<TDate>(props: DateRangePickerViewProps<TDate>): JSX.Element;
-export declare namespace DateRangePickerView {
-    var propTypes: {
-        calendars: PropTypes.Requireable<number>;
-        disableAutoMonthSwitching: PropTypes.Requireable<boolean>;
-    };
-}
 export {};

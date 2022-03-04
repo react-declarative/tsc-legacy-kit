@@ -1,3 +1,2 @@
-import PropTypes from 'prop-types';
-declare const elementAcceptingRef: PropTypes.Requireable<unknown>;
+declare const elementAcceptingRef: any;
 export default elementAcceptingRef;
