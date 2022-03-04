@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "outFile": "./_dist/@date-io.d.ts"
+    },
+    "extends": "../tsconfig.json"
+}

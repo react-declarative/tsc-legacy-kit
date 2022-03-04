@@ -1,6 +1,6 @@
 import { IUtils, DateIOFormats, Unit } from "@date-io/core/IUtils";
 declare type Locale = any;
-export default class DateFnsUtils implements IUtils<Date> {
+export interface DateFnsUtils extends IUtils<Date> {
     lib: string;
     locale?: Locale;
     formats: DateIOFormats;
@@ -66,4 +66,5 @@ export default class DateFnsUtils implements IUtils<Date> {
     getWeekArray: (date: Date) => Date[][];
     getYearRange: (start: Date, end: Date) => Date[];
 }
+export default DateFnsUtils;
 export {};

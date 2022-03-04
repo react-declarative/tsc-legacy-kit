@@ -8,7 +8,7 @@ interface Opts {
 }
 declare type Dayjs = defaultDayjs.Dayjs;
 declare type Constructor<TDate extends Dayjs> = (...args: Parameters<typeof defaultDayjs>) => TDate;
-export default class DayjsUtils<TDate extends Dayjs = Dayjs> implements IUtils<TDate> {
+export interface DayjsUtils<TDate extends Dayjs = Dayjs> extends IUtils<TDate> {
     rawDayJsInstance: typeof defaultDayjs;
     lib: string;
     dayjs: Constructor<TDate>;
@@ -73,4 +73,5 @@ export default class DayjsUtils<TDate extends Dayjs = Dayjs> implements IUtils<T
     getYearRange: (start: TDate, end: TDate) => TDate[];
     isWithinRange: (date: TDate, [start, end]: [TDate, TDate]) => boolean;
 }
+export default DayjsUtils;
 export {};

@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 import { IUtils, DateIOFormats, Unit } from "@date-io/core/IUtils";
-export default class LuxonUtils implements IUtils<DateTime> {
+export interface LuxonUtils extends IUtils<DateTime> {
     lib: string;
     locale: string;
     formats: DateIOFormats;
@@ -66,3 +66,4 @@ export default class LuxonUtils implements IUtils<DateTime> {
     isNull: (date: DateTime | null) => boolean;
     isWithinRange: (date: DateTime, [start, end]: [DateTime, DateTime]) => boolean;
 }
+export default LuxonUtils;

@@ -6,7 +6,7 @@ interface Opts {
     formats?: Partial<DateIOFormats>;
 }
 declare type Moment = defaultMoment.Moment;
-export default class MomentUtils implements IUtils<defaultMoment.Moment> {
+export interface MomentUtils extends IUtils<defaultMoment.Moment> {
     moment: typeof defaultMoment;
     lib: string;
     locale?: string;
@@ -70,4 +70,5 @@ export default class MomentUtils implements IUtils<defaultMoment.Moment> {
     getYearRange: (start: Moment, end: Moment) => defaultMoment.Moment[];
     isWithinRange: (date: Moment, [start, end]: [Moment, Moment]) => boolean;
 }
+export default MomentUtils;
 export {};
