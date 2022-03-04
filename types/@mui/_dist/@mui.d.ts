@@ -10028,8 +10028,7 @@ declare module "@mui/utils/ponyfillGlobal" {
     export default _default;
 }
 declare module "@mui/utils/refType" {
-    import PropTypes from 'prop-types';
-    const refType: PropTypes.Requireable<object>;
+    type refType = any;
     export default refType;
 }
 declare module "@mui/utils/capitalize" {
@@ -68950,13 +68949,7 @@ declare module "@mui/material/utils/getScrollbarSize" {
     export default getScrollbarSize;
 }
 declare module "@mui/styles/createGenerateClassName/createGenerateClassName" {
-    import { GenerateId } from 'jss';
-    export interface GenerateClassNameOptions {
-        disableGlobal?: boolean;
-        productionPrefix?: string;
-        seed?: string;
-    }
-    export type createGenerateClassName = (options?: GenerateClassNameOptions) => GenerateId;
+    export type createGenerateClassName = any;
     export default createGenerateClassName;
 }
 declare module "@mui/styles/createGenerateClassName/index" {
@@ -68969,9 +68962,17 @@ declare module "@mui/styles/defaultTheme/index" {
 declare module "@mui/styles/withStyles/withStyles" {
     import { PropInjector } from "@mui/types/index";
     import * as CSS from 'csstype';
-    import * as JSS from 'jss';
     import { DefaultTheme } from "@mui/styles/defaultTheme/index";
     export {};
+    export interface StyleSheetFactoryOptions {
+        media?: string;
+        meta?: string;
+        index?: number;
+        link?: boolean;
+        element?: HTMLStyleElement;
+        generateId?: any;
+        classNamePrefix?: string;
+    }
     type JSSNormalCssProperties = CSS.Properties<number | string>;
     type JSSFontface = CSS.AtRule.FontFace & {
         fallbacks?: CSS.AtRule.FontFace[];
@@ -69006,7 +69007,7 @@ declare module "@mui/styles/withStyles/withStyles" {
      */
     export type StyleRulesCallback<Theme, Props extends object, ClassKey extends string = string> = (theme: Theme) => StyleRules<Props, ClassKey>;
     export type Styles<Theme, Props extends object, ClassKey extends string = string> = StyleRules<Props, ClassKey> | StyleRulesCallback<Theme, Props, ClassKey>;
-    export interface WithStylesOptions<Theme = DefaultTheme> extends JSS.StyleSheetFactoryOptions {
+    export interface WithStylesOptions<Theme = DefaultTheme> extends StyleSheetFactoryOptions {
         defaultTheme?: Theme;
         flip?: boolean;
         withTheme?: boolean;
@@ -69086,8 +69087,7 @@ declare module "@mui/styles/getThemeProps/index" {
     export * from "@mui/styles/getThemeProps/getThemeProps";
 }
 declare module "@mui/styles/jssPreset/jssPreset" {
-    import { JssOptions } from 'jss';
-    export type jssPreset = () => JssOptions;
+    export type jssPreset = any;
     export default jssPreset;
 }
 declare module "@mui/styles/jssPreset/index" {
@@ -69122,12 +69122,11 @@ declare module "@mui/styles/mergeClasses/index" {
 }
 declare module "@mui/styles/StylesProvider/StylesProvider" {
     import React from 'react';
-    import { GenerateId, Jss } from 'jss';
     export interface StylesOptions {
         disableGeneration?: boolean;
-        generateClassName?: GenerateId;
+        generateClassName?: any;
         injectFirst?: boolean;
-        jss?: Jss;
+        jss?: any;
         sheetsCache?: {};
         sheetsManager?: {};
         sheetsRegistry?: {};

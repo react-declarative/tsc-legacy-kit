@@ -1,3 +1,2 @@
-import { JssOptions } from 'jss';
-export type jssPreset = () => JssOptions;
+export type jssPreset = any;
 export default jssPreset;

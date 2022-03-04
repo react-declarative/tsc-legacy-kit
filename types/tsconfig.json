@@ -12,8 +12,6 @@
         "baseUrl": ".",
         "rootDir": ".",
         "paths": {
-            "jss": [ "./jss" ],
-            "jss/*": [ "./jss/*" ],
             "csstype": [ "./csstype" ],
             "csstype/*": [ "./csstype/*" ],
             "@mui/base": [ "./@mui/core" ],
@@ -64,18 +62,10 @@
             "@emotion/styled/*": [ "./@emotion/styled/*" ],
             "@popperjs/core": [ "./@popperjs/core" ],
             "@popperjs/core/*": [ "./@popperjs/core/*" ],
-            "prop-types": [ "./@types/prop-types" ],
-            "prop-types/*": [ "./@types/prop-types/*" ],
             "react": [ "./@types/react" ],
             "react/*": [ "./@types/react/*" ],
-            "react-dom": [ "./@types/react-dom" ],
-            "react-dom/*": [ "./@types/react-dom/*" ],
-            "react-is": [ "./@types/react-is" ],
-            "react-is/*": [ "./@types/react-is/*" ],
             "react-transition-group": [ "./@types/react-transition-group" ],
             "react-transition-group/*": [ "./@types/react-transition-group/*" ],
-            "scheduler": [ "./@types/scheduler" ],
-            "scheduler/*": [ "./@types/scheduler/*" ],
         }
     },
     "exclude": [

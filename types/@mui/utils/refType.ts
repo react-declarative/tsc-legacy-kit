@@ -1,3 +1,2 @@
-import PropTypes from 'prop-types';
-declare const refType: PropTypes.Requireable<object>;
+type refType = any;
 export default refType;

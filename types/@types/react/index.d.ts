@@ -40,8 +40,9 @@
 /// <reference path="global.d.ts" />
 
 import * as CSS from 'csstype';
-import * as PropTypes from 'prop-types';
-type SchedulerInteraction = any;//import { Interaction as SchedulerInteraction } from 'scheduler/tracing';
+type PropTypes = any; //import * as PropTypes from 'prop-types';
+declare namespace PropTypes {}
+type SchedulerInteraction = any; //import { Interaction as SchedulerInteraction } from 'scheduler/tracing';
 
 type NativeAnimationEvent = AnimationEvent;
 type NativeClipboardEvent = ClipboardEvent;
@@ -2947,11 +2948,11 @@ declare namespace React {
     // React.PropTypes
     // ----------------------------------------------------------------------
 
-    type Validator<T> = PropTypes.Validator<T>;
+    type Validator<T> = any;
 
-    type Requireable<T> = PropTypes.Requireable<T>;
+    type Requireable<T> = any;
 
-    type ValidationMap<T> = PropTypes.ValidationMap<T>;
+    type ValidationMap<T> = any;
 
     type WeakValidationMap<T> = {
         [K in keyof T]?: null extends T[K]
@@ -2962,22 +2963,22 @@ declare namespace React {
     };
 
     interface ReactPropTypes {
-        any: typeof PropTypes.any;
-        array: typeof PropTypes.array;
-        bool: typeof PropTypes.bool;
-        func: typeof PropTypes.func;
-        number: typeof PropTypes.number;
-        object: typeof PropTypes.object;
-        string: typeof PropTypes.string;
-        node: typeof PropTypes.node;
-        element: typeof PropTypes.element;
-        instanceOf: typeof PropTypes.instanceOf;
-        oneOf: typeof PropTypes.oneOf;
-        oneOfType: typeof PropTypes.oneOfType;
-        arrayOf: typeof PropTypes.arrayOf;
-        objectOf: typeof PropTypes.objectOf;
-        shape: typeof PropTypes.shape;
-        exact: typeof PropTypes.exact;
+        any: any;
+        array: any;
+        bool: any;
+        func: any;
+        number: any;
+        object: any;
+        string: any;
+        node: any;
+        element: any;
+        instanceOf: any;
+        oneOf: any;
+        oneOfType: any;
+        arrayOf: any;
+        objectOf: any;
+        shape: any;
+        exact: any;
     }
 
     //
@@ -3067,9 +3068,9 @@ type Defaultize<P, D> = P extends any
     : never;
 
 type ReactManagedAttributes<C, P> = C extends { propTypes: infer T; defaultProps: infer D; }
-    ? Defaultize<MergePropTypes<P, PropTypes.InferProps<T>>, D>
+    ? Defaultize<MergePropTypes<P, any>, D>
     : C extends { propTypes: infer T; }
-        ? MergePropTypes<P, PropTypes.InferProps<T>>
+        ? MergePropTypes<P, any>
         : C extends { defaultProps: infer D; }
             ? Defaultize<P, D>
             : P;

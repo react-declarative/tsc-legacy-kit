@@ -1,8 +1,18 @@
 import { PropInjector } from '@mui/types';
 import * as CSS from 'csstype';
-import * as JSS from 'jss';
 import { DefaultTheme } from '../defaultTheme';
 export {};
+
+export interface StyleSheetFactoryOptions {
+    media?: string
+    meta?: string
+    index?: number
+    link?: boolean
+    element?: HTMLStyleElement
+    generateId?: any
+    classNamePrefix?: string
+}
+
 declare type JSSNormalCssProperties = CSS.Properties<number | string>;
 declare type JSSFontface = CSS.AtRule.FontFace & {
     fallbacks?: CSS.AtRule.FontFace[];
@@ -37,7 +47,7 @@ export declare type StyleRules<Props extends object = {}, ClassKey extends strin
  */
 export declare type StyleRulesCallback<Theme, Props extends object, ClassKey extends string = string> = (theme: Theme) => StyleRules<Props, ClassKey>;
 export declare type Styles<Theme, Props extends object, ClassKey extends string = string> = StyleRules<Props, ClassKey> | StyleRulesCallback<Theme, Props, ClassKey>;
-export interface WithStylesOptions<Theme = DefaultTheme> extends JSS.StyleSheetFactoryOptions {
+export interface WithStylesOptions<Theme = DefaultTheme> extends StyleSheetFactoryOptions {
     defaultTheme?: Theme;
     flip?: boolean;
     withTheme?: boolean;

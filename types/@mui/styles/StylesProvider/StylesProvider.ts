@@ -1,10 +1,9 @@
 import React from 'react';
-import { GenerateId, Jss } from 'jss';
 export interface StylesOptions {
     disableGeneration?: boolean;
-    generateClassName?: GenerateId;
+    generateClassName?: any;
     injectFirst?: boolean;
-    jss?: Jss;
+    jss?: any;
     sheetsCache?: {};
     sheetsManager?: {};
     sheetsRegistry?: {};
