@@ -41,7 +41,7 @@
 
 import * as CSS from 'csstype';
 import * as PropTypes from 'prop-types';
-import { Interaction as SchedulerInteraction } from 'scheduler/tracing';
+type SchedulerInteraction = any;//import { Interaction as SchedulerInteraction } from 'scheduler/tracing';
 
 type NativeAnimationEvent = AnimationEvent;
 type NativeClipboardEvent = ClipboardEvent;

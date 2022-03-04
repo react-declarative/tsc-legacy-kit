@@ -9994,8 +9994,7 @@ declare module "@mui/utils/elementTypeAcceptingRef" {
     export default _default;
 }
 declare module "@mui/utils/exactProp" {
-    import { ValidationMap } from 'prop-types';
-    export type exactProp = <T>(propTypes: ValidationMap<T>) => ValidationMap<T>;
+    export type exactProp = any;
     export default exactProp;
 }
 declare module "@mui/utils/formatMuiErrorMessage" {
