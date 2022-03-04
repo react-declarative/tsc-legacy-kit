@@ -1,3 +1,6 @@
+/// <reference path="./@emotion.d.ts" />
+/// <reference path="./@popperjs.d.ts" />
+/// <reference path="./@mui.d.ts" />
 
 import materialDefault from '@mui/material';
 import iconsDefault from '@mui/icons-material';

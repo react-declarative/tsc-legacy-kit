@@ -9,3 +9,4 @@ do
     cp ./_dist/${D}.d.ts ../../dist
     cd ..
 done
+cd ..

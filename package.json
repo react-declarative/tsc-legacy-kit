@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "bash ./scripts/build.sh"
+    "build:types": "bash ./scripts/build.sh",
+    "build:lib": "cd lib && npm run build",
+    "copy": "bash ./scripts/copy.sh"
   },
   "repository": {
     "type": "git",
