@@ -1,1 +1,2 @@
-dist/@mui.d.ts
+_dist/*
+!_dist/.gitkeep

@@ -1,1 +1,2 @@
-_dist/@popperjs.d.ts
+_dist/*
+!_dist/.gitkeep
