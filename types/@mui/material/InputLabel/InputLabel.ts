@@ -64,4 +64,5 @@ export interface InputLabelProps extends StandardProps<FormLabelProps> {
  * - [InputLabel API](https://mui.com/api/input-label/)
  * - inherits [FormLabel API](https://mui.com/api/form-label/)
  */
-export default function InputLabel(props: InputLabelProps): JSX.Element;
+export type InputLabel = (props: InputLabelProps) => JSX.Element;
+export default InputLabel;

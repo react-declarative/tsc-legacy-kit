@@ -3,4 +3,5 @@ export interface StyledEngineProviderProps {
     children?: React.ReactNode;
     injectFirst?: boolean;
 }
-export default function StyledEngineProvider(props: StyledEngineProviderProps): JSX.Element;
+export type StyledEngineProvider = (props: StyledEngineProviderProps) => JSX.Element;
+export default StyledEngineProvider;

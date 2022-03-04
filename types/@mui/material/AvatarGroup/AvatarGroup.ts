@@ -59,4 +59,5 @@ export interface AvatarGroupProps extends StandardProps<React.HTMLAttributes<HTM
  *
  * - [AvatarGroup API](https://mui.com/api/avatar-group/)
  */
-export default function AvatarGroup(props: AvatarGroupProps): JSX.Element;
+export type AvatarGroup = (props: AvatarGroupProps) => JSX.Element;
+export default  AvatarGroup;

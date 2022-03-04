@@ -31,4 +31,5 @@ export interface TimelineItemProps extends StandardProps<React.HTMLAttributes<HT
  *
  * - [TimelineItem API](https://mui.com/api/timeline-item/)
  */
-export default function TimelineItem(props: TimelineItemProps): JSX.Element;
+export type TimelineItem = (props: TimelineItemProps) => JSX.Element;
+export default TimelineItem;

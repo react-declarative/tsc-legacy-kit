@@ -1,1 +1,2 @@
-export default function withStyles(stylesCreator: any, options?: object): never;
+export type withStyles = (stylesCreator: any, options?: object) => never;
+export default withStyles;

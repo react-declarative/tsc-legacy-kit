@@ -30,4 +30,5 @@ export interface PortalProps {
  *
  * - [Portal API](https://mui.com/api/portal/)
  */
-export default function Portal(props: PortalProps): JSX.Element;
+export type Portal = (props: PortalProps) => JSX.Element;
+export default Portal;

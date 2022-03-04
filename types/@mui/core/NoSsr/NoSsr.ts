@@ -34,4 +34,5 @@ export interface NoSsrProps {
  *
  * - [NoSsr API](https://mui.com/api/no-ssr/)
  */
-export default function NoSsr(props: NoSsrProps): JSX.Element;
+export type NoSsr = (props: NoSsrProps) => JSX.Element;
+export default NoSsr;

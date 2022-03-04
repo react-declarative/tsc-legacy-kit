@@ -35,4 +35,5 @@ export interface FormGroupProps extends StandardProps<React.HTMLAttributes<HTMLD
  *
  * - [FormGroup API](https://mui.com/api/form-group/)
  */
-export default function FormGroup(props: FormGroupProps): JSX.Element;
+export type FormGroup = (props: FormGroupProps) => JSX.Element;
+export default FormGroup;

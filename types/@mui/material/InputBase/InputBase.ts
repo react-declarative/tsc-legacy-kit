@@ -200,4 +200,5 @@ export interface InputBaseComponentProps extends React.HTMLAttributes<HTMLInputE
  *
  * - [InputBase API](https://mui.com/api/input-base/)
  */
-export default function InputBase(props: InputBaseProps): JSX.Element;
+export type InputBase = (props: InputBaseProps) => JSX.Element;
+export default InputBase;

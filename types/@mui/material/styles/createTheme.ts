@@ -43,4 +43,5 @@ export declare function createMuiTheme(options?: ThemeOptions, ...args: object[]
  * @param args Deep merge the arguments with the about to be returned theme.
  * @returns A complete, ready-to-use theme object.
  */
-export default function createTheme(options?: ThemeOptions, ...args: object[]): Theme;
+export type createTheme = (options?: ThemeOptions, ...args: object[]) => Theme;
+export default createTheme;

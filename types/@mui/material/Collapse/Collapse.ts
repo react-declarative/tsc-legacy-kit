@@ -66,4 +66,5 @@ export interface CollapseProps extends StandardProps<TransitionProps, 'timeout'>
  * - [Collapse API](https://mui.com/api/collapse/)
  * - inherits [Transition API](http://reactcommunity.org/react-transition-group/transition/#Transition-props)
  */
-export default function Collapse(props: CollapseProps): JSX.Element;
+export type Collapse = (props: CollapseProps) => JSX.Element;
+export default Collapse;

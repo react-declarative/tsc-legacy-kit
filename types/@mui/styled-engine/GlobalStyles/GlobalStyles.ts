@@ -4,4 +4,5 @@ export interface GlobalStylesProps<Theme = {}> {
     defaultTheme?: object;
     styles: Interpolation<Theme>;
 }
-export default function GlobalStyles(props: GlobalStylesProps): React.ReactElement;
+export type GlobalStyles = (props: GlobalStylesProps) => React.ReactElement;
+export default GlobalStyles;

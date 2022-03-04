@@ -14,4 +14,5 @@ export interface WithWidthProps extends Partial<WithWidth> {
 }
 export declare function isWidthDown(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive?: boolean): boolean;
 export declare function isWidthUp(breakpoint: Breakpoint, screenWidth: Breakpoint, inclusive?: boolean): boolean;
-export default function withWidth(options?: WithWidthOptions): PropInjector<WithWidth, WithWidthProps>;
+export type withWidth = (options?: WithWidthOptions) => PropInjector<WithWidth, WithWidthProps>;
+export default withWidth;

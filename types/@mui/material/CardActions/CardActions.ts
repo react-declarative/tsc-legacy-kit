@@ -31,4 +31,5 @@ export interface CardActionsProps extends StandardProps<React.HTMLAttributes<HTM
  *
  * - [CardActions API](https://mui.com/api/card-actions/)
  */
-export default function CardActions(props: CardActionsProps): JSX.Element;
+export type CardActions = (props: CardActionsProps) => JSX.Element;
+export default CardActions;

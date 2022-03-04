@@ -81,4 +81,5 @@ export interface TreeItemProps extends StandardProps<React.HTMLAttributes<HTMLLI
  *
  * - [TreeItem API](https://mui.com/api/tree-item/)
  */
-export default function TreeItem(props: TreeItemProps): JSX.Element;
+export type TreeItem = (props: TreeItemProps) => JSX.Element;
+export default TreeItem;

@@ -63,4 +63,5 @@ export interface ListItemTextProps<PrimaryTypographyComponent extends React.Elem
  *
  * - [ListItemText API](https://mui.com/api/list-item-text/)
  */
-export default function ListItemText<PrimaryTypographyComponent extends React.ElementType = 'span', SecondaryTypographyComponent extends React.ElementType = 'p'>(props: ListItemTextProps<PrimaryTypographyComponent, SecondaryTypographyComponent>): JSX.Element;
+export type ListItemText = <PrimaryTypographyComponent extends React.ElementType = 'span', SecondaryTypographyComponent extends React.ElementType = 'p'>(props: ListItemTextProps<PrimaryTypographyComponent, SecondaryTypographyComponent>) => JSX.Element;
+export default ListItemText;

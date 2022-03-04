@@ -27,4 +27,5 @@ export interface TimelineSeparatorProps extends StandardProps<React.HTMLAttribut
  *
  * - [TimelineSeparator API](https://mui.com/api/timeline-separator/)
  */
-export default function TimelineSeparator(props: TimelineSeparatorProps): JSX.Element;
+export type TimelineSeparator = (props: TimelineSeparatorProps) => JSX.Element;
+export default TimelineSeparator;

@@ -21,7 +21,7 @@ export interface MultiSelectUnstyledProps<TValue extends {}> extends SelectUnsty
     componentsProps?: {
         root?: React.ComponentPropsWithRef<'button'> & MultiSelectUnstyledComponentsPropsOverrides;
         listbox?: React.ComponentPropsWithRef<'ul'> & MultiSelectUnstyledComponentsPropsOverrides;
-        popper?: Partial<React.ComponentPropsWithRef<typeof PopperUnstyled>> & MultiSelectUnstyledComponentsPropsOverrides;
+        popper?: Partial<React.ComponentPropsWithRef<PopperUnstyled>> & MultiSelectUnstyledComponentsPropsOverrides;
     };
     /**
      * The default selected values. Use when the component is not controlled.

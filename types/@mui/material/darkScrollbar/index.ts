@@ -1,8 +1,8 @@
-export default function darkScrollbar(options?: {
+export type darkScrollbar = (options?: {
     track: string;
     thumb: string;
     active: string;
-}): {
+}) => {
     scrollbarColor: string;
     '&::-webkit-scrollbar, & *::-webkit-scrollbar': {
         backgroundColor: string;
@@ -26,3 +26,4 @@ export default function darkScrollbar(options?: {
         backgroundColor: string;
     };
 };
+export default darkScrollbar

@@ -3,4 +3,5 @@ export interface UseScrollTriggerOptions {
     target?: Node | Window;
     threshold?: number;
 }
-export default function useScrollTrigger(options?: UseScrollTriggerOptions): boolean;
+export type useScrollTrigger = (options?: UseScrollTriggerOptions) => boolean;
+export default useScrollTrigger;

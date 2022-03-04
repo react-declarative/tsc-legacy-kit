@@ -1,2 +1,3 @@
 import { Theme } from './createTheme';
-export default function useTheme<T = Theme>(defaultTheme?: T): T;
+export type useTheme = <T = Theme>(defaultTheme?: T) => T;
+export default useTheme;

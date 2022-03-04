@@ -8,7 +8,8 @@ export declare type ThemedProps<Theme, Name extends keyof any> = Theme extends {
         defaultProps: infer Props;
     }>;
 } ? Props : {};
-export default function useThemeProps<Theme extends ThemeWithProps, Props, Name extends keyof any>(params: {
+export type useThemeProps = <Theme extends ThemeWithProps, Props, Name extends keyof any>(params: {
     props: Props;
     name: Name;
-}): Props & ThemedProps<Theme, Name>;
+}) => Props & ThemedProps<Theme, Name>;
+export default useThemeProps;

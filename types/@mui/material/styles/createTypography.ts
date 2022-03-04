@@ -38,4 +38,5 @@ export interface Typography extends Record<Variant, TypographyStyle>, FontStyle,
 }
 export interface TypographyOptions extends Partial<Record<Variant, TypographyStyleOptions> & FontStyleOptions> {
 }
-export default function createTypography(palette: Palette, typography: TypographyOptions | ((palette: Palette) => TypographyOptions)): Typography;
+export type createTypography = (palette: Palette, typography: TypographyOptions | ((palette: Palette) => TypographyOptions)) => Typography;
+export default createTypography;

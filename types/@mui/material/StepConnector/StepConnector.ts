@@ -25,4 +25,5 @@ export declare type StepConnectorClasskey = keyof NonNullable<StepConnectorProps
  *
  * - [StepConnector API](https://mui.com/api/step-connector/)
  */
-export default function StepConnector(props: StepConnectorProps): JSX.Element;
+export type StepConnector = (props: StepConnectorProps) => JSX.Element;
+export default StepConnector;

@@ -45,4 +45,5 @@ export interface ImageListItemBarProps extends StandardProps<React.HTMLAttribute
  *
  * - [ImageListItemBar API](https://mui.com/api/image-list-item-bar/)
  */
-export default function ImageListItemBar(props: ImageListItemBarProps): JSX.Element;
+export type ImageListItemBar = (props: ImageListItemBarProps) => JSX.Element;
+export default ImageListItemBar;

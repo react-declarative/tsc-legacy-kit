@@ -70,4 +70,5 @@ export interface BreakpointsOptions extends Partial<Breakpoints> {
      */
     unit?: string | undefined;
 }
-export default function createBreakpoints(options: BreakpointsOptions): Breakpoints;
+export type createBreakpoints = (options: BreakpointsOptions) => Breakpoints;
+export default createBreakpoints;

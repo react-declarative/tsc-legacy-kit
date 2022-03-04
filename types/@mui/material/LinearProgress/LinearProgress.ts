@@ -51,4 +51,5 @@ export interface LinearProgressProps extends StandardProps<React.HTMLAttributes<
  *
  * - [LinearProgress API](https://mui.com/api/linear-progress/)
  */
-export default function LinearProgress(props: LinearProgressProps): JSX.Element;
+export type LinearProgress = (props: LinearProgressProps) => JSX.Element;
+export default LinearProgress;

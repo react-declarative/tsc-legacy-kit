@@ -115,4 +115,5 @@ export interface DialogProps extends StandardProps<ModalProps, 'children'> {
  * - [Dialog API](https://mui.com/api/dialog/)
  * - inherits [Modal API](https://mui.com/api/modal/)
  */
-export default function Dialog(props: DialogProps): JSX.Element;
+export type Dialog = (props: DialogProps) => JSX.Element;
+export default Dialog;

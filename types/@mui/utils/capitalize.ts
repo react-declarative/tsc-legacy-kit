@@ -1,1 +1,2 @@
-export default function capitalize(string: string): string;
+export type capitalize = (string: string) => string;
+export default capitalize;

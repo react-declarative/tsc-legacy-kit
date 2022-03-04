@@ -89,4 +89,5 @@ export interface MenuProps extends StandardProps<PopoverProps> {
  * - [Menu API](https://mui.com/api/menu/)
  * - inherits [Popover API](https://mui.com/api/popover/)
  */
-export default function Menu(props: MenuProps): JSX.Element;
+export type Menu = (props: MenuProps) => JSX.Element;
+export default Menu;

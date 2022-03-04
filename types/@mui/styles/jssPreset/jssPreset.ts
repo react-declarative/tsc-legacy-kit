@@ -1,2 +1,3 @@
 import { JssOptions } from 'jss';
-export default function jssPreset(): JssOptions;
+export type jssPreset = () => JssOptions;
+export default jssPreset;

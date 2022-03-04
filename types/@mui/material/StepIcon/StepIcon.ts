@@ -43,4 +43,5 @@ export declare type StepIconClasskey = keyof NonNullable<StepIconProps['classes'
  *
  * - [StepIcon API](https://mui.com/api/step-icon/)
  */
-export default function StepIcon(props: StepIconProps): JSX.Element;
+export type StepIcon = (props: StepIconProps) => JSX.Element;
+export default StepIcon;

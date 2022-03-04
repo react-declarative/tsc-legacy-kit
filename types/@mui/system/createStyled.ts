@@ -16,9 +16,10 @@ export interface MuiStyledOptions {
     skipSx?: boolean;
 }
 export declare type CreateMUIStyled<T extends object = DefaultTheme> = CreateMUIStyledStyledEngine<MUIStyledCommonProps<T>, MuiStyledOptions, T>;
-export default function createStyled<T extends object = DefaultTheme>(options?: {
+export type createStyled = <T extends object = DefaultTheme>(options?: {
     defaultTheme?: T;
     rootShouldForwardProp?: (prop: PropertyKey) => boolean;
     slotShouldForwardProp?: (prop: PropertyKey) => boolean;
     styleFunctionSx?: typeof styleFunctionSx;
-}): CreateMUIStyled<T>;
+}) => CreateMUIStyled<T>;
+export default createStyled;

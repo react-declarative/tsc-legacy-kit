@@ -51,7 +51,7 @@ export interface SelectUnstyledProps<TValue extends {}> extends SelectUnstyledCo
     componentsProps?: {
         root?: React.ComponentPropsWithRef<'button'> & SelectUnstyledComponentsPropsOverrides;
         listbox?: React.ComponentPropsWithRef<'ul'> & SelectUnstyledComponentsPropsOverrides;
-        popper?: Partial<React.ComponentPropsWithRef<typeof PopperUnstyled>> & SelectUnstyledComponentsPropsOverrides;
+        popper?: Partial<React.ComponentPropsWithRef<PopperUnstyled>> & SelectUnstyledComponentsPropsOverrides;
     };
     /**
      * The default selected value. Use when the component is not controlled.

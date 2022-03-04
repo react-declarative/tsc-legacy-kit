@@ -1,1 +1,2 @@
-export default function useThemeWithoutDefault<T = null>(defaultTheme?: T): T;
+export type useThemeWithoutDefault = <T = null>(defaultTheme?: T) => T;
+export default useThemeWithoutDefault;

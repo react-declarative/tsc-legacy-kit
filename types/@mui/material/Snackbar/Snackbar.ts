@@ -123,4 +123,5 @@ export interface SnackbarProps extends StandardProps<React.HTMLAttributes<HTMLDi
  *
  * - [Snackbar API](https://mui.com/api/snackbar/)
  */
-export default function Snackbar(props: SnackbarProps): JSX.Element;
+export type Snackbar = (props: SnackbarProps) => JSX.Element;
+export default Snackbar;

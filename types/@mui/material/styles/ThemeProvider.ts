@@ -10,4 +10,5 @@ export interface ThemeProviderProps<Theme = DefaultTheme> {
  *
  * - [ThemeProvider API](/customization/theming/#themeprovider)
  */
-export default function ThemeProvider<T = DefaultTheme>(props: ThemeProviderProps<T>): React.ReactElement<ThemeProviderProps<T>>;
+export type ThemeProvider = <T = DefaultTheme>(props: ThemeProviderProps<T>) => React.ReactElement<ThemeProviderProps<T>>;
+export default ThemeProvider;

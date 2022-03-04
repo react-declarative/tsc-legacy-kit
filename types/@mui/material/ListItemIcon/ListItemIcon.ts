@@ -28,4 +28,5 @@ export interface ListItemIconProps extends StandardProps<React.HTMLAttributes<HT
  *
  * - [ListItemIcon API](https://mui.com/api/list-item-icon/)
  */
-export default function ListItemIcon(props: ListItemIconProps): JSX.Element;
+export type ListItemIcon = (props: ListItemIconProps) => JSX.Element;
+export default ListItemIcon;

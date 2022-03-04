@@ -23,7 +23,8 @@ export interface TabContextProps {
  *
  * - [TabContext API](https://mui.com/api/tab-context/)
  */
-export default function TabContext(props: TabContextProps): JSX.Element;
+export type TabContext = (props: TabContextProps) => JSX.Element;
+export default TabContext;
 export declare function useTabContext(): TabContextValue | null;
 export declare function getPanelId(context: TabContextValue, tabValue: string): string;
 export declare function getTabId(context: TabContextValue, tabValue: string): string;

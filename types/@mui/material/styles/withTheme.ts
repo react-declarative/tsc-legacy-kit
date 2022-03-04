@@ -1,1 +1,2 @@
-export default function withTheme(Component: any): never;
+export type withTheme = (Component: any) => never;
+export default withTheme;

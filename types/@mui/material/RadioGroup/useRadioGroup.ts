@@ -1,4 +1,5 @@
 import { RadioGroupContextValue } from './RadioGroupContext';
 export interface RadioGroupState extends RadioGroupContextValue {
 }
-export default function useRadioGroup(): RadioGroupState | undefined;
+export type useRadioGroup = () => RadioGroupState | undefined;
+export default useRadioGroup;

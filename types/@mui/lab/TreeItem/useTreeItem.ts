@@ -1,5 +1,5 @@
 import * as React from 'react';
-export default function useTreeItem(nodeId: string): {
+export type useTreeItem = (nodeId: string) => {
     disabled: boolean;
     expanded: boolean;
     selected: boolean;
@@ -8,3 +8,4 @@ export default function useTreeItem(nodeId: string): {
     handleSelection: (event: React.SyntheticEvent) => void;
     preventSelection: (event: React.SyntheticEvent) => void;
 };
+export default useTreeItem;

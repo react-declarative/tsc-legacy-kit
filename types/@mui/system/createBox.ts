@@ -1,8 +1,9 @@
 import Box from './Box';
 import styleFunctionSx from './styleFunctionSx';
-export default function createBox(options?: {
+export type createBox = (options?: {
     defaultTheme: object;
     defaultClassName?: string;
     generateClassName?: (componentName: string) => string;
     styleFunctionSx?: typeof styleFunctionSx;
-}): typeof Box;
+}) => typeof Box;
+export default createBox;

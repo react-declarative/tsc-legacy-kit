@@ -35,4 +35,5 @@ export declare type RadioGroupClassKey = keyof NonNullable<RadioGroupProps['clas
  * - [RadioGroup API](https://mui.com/api/radio-group/)
  * - inherits [FormGroup API](https://mui.com/api/form-group/)
  */
-export default function RadioGroup(props: RadioGroupProps): JSX.Element;
+export type RadioGroup = (props: RadioGroupProps) => JSX.Element;
+export default RadioGroup;

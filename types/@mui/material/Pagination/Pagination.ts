@@ -75,4 +75,5 @@ export interface PaginationProps extends UsePaginationProps, StandardProps<React
  *
  * - [Pagination API](https://mui.com/api/pagination/)
  */
-export default function Pagination(props: PaginationProps): JSX.Element;
+export type Pagination = (props: PaginationProps) => JSX.Element;
+export default Pagination;

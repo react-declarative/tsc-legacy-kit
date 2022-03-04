@@ -32,4 +32,5 @@ export interface TabPanelProps extends StandardProps<React.HTMLAttributes<HTMLDi
  *
  * - [TabPanel API](https://mui.com/api/tab-panel/)
  */
-export default function TabPanel(props: TabPanelProps): JSX.Element;
+export type TabPanel = (props: TabPanelProps) => JSX.Element;
+export default TabPanel

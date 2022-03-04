@@ -58,7 +58,7 @@ export interface SliderUnstyledTypeMap<P = {}, D extends React.ElementType = 'sp
             thumb?: React.HTMLAttributes<HTMLSpanElement> & SliderUnstyledComponentsPropsOverrides;
             mark?: React.HTMLAttributes<HTMLSpanElement> & SliderUnstyledComponentsPropsOverrides;
             markLabel?: React.HTMLAttributes<HTMLSpanElement> & SliderUnstyledComponentsPropsOverrides;
-            valueLabel?: React.ComponentPropsWithRef<typeof SliderValueLabelUnstyled> & SliderUnstyledComponentsPropsOverrides;
+            valueLabel?: React.ComponentPropsWithRef<SliderValueLabelUnstyled> & SliderUnstyledComponentsPropsOverrides;
         };
         /**
          * The default value. Use when the component is not controlled.

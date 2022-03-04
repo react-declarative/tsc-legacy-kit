@@ -28,4 +28,5 @@ export interface TimelineContentProps extends StandardProps<TypographyProps> {
  * - [TimelineContent API](https://mui.com/api/timeline-content/)
  * - inherits [Typography API](https://mui.com/api/typography/)
  */
-export default function TimelineContent(props: TimelineContentProps): JSX.Element;
+export type TimelineContent = (props: TimelineContentProps) => JSX.Element;
+export default TimelineContent

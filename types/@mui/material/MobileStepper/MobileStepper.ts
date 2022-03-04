@@ -57,4 +57,5 @@ export interface MobileStepperProps extends StandardProps<PaperProps, 'children'
  * - [MobileStepper API](https://mui.com/api/mobile-stepper/)
  * - inherits [Paper API](https://mui.com/api/paper/)
  */
-export default function MobileStepper(props: MobileStepperProps): JSX.Element;
+export type MobileStepper = (props: MobileStepperProps) => JSX.Element;
+export default MobileStepper;

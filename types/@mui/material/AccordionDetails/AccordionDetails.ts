@@ -26,4 +26,5 @@ export interface AccordionDetailsProps extends StandardProps<React.HTMLAttribute
  *
  * - [AccordionDetails API](https://mui.com/api/accordion-details/)
  */
-export default function AccordionDetails(props: AccordionDetailsProps): JSX.Element;
+export type AccordionDetails = (props: AccordionDetailsProps) => JSX.Element;
+export default AccordionDetails;

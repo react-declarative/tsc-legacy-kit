@@ -1,6 +1,6 @@
 import * as React from 'react';
 import UseButtonProps from './UseButtonProps';
-export default function useButton(props: UseButtonProps): {
+export type useButton = (props: UseButtonProps) => {
     getRootProps: (otherHandlers?: Record<string, (event: any) => void> | undefined) => {
         tabIndex: number;
         type: "button" | "reset" | "submit" | undefined;
@@ -11,3 +11,4 @@ export default function useButton(props: UseButtonProps): {
     disabled: boolean;
     active: boolean;
 };
+export default useButton;

@@ -1,1 +1,2 @@
-export default function propsToClassKey(props: object): string;
+export type propsToClassKey = (props: object) => string;
+export default propsToClassKey;

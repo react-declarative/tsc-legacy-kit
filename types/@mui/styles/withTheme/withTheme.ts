@@ -11,4 +11,5 @@ export interface ThemedComponentProps extends Partial<WithTheme> {
     ref?: React.Ref<unknown>;
 }
 export declare function withThemeCreator<Theme = DefaultTheme>(option?: WithThemeCreatorOption<Theme>): PropInjector<WithTheme<Theme>, ThemedComponentProps>;
-export default function withTheme<Theme, C extends React.JSXElementConstructor<ConsistentWith<React.ComponentProps<C>, WithTheme<Theme>>>>(component: C): React.JSXElementConstructor<DistributiveOmit<JSX.LibraryManagedAttributes<C, React.ComponentProps<C>>, keyof WithTheme<Theme>> & Partial<WithTheme<Theme>> & ThemedComponentProps>;
+export type withTheme = <Theme, C extends React.JSXElementConstructor<ConsistentWith<React.ComponentProps<C>, WithTheme<Theme>>>>(component: C) => React.JSXElementConstructor<DistributiveOmit<JSX.LibraryManagedAttributes<C, React.ComponentProps<C>>, keyof WithTheme<Theme>> & Partial<WithTheme<Theme>> & ThemedComponentProps>;
+export default withTheme;

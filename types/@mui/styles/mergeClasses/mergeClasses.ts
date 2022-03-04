@@ -7,4 +7,5 @@ export interface MergeClassesOption {
     newClasses?: Classes;
     Component?: React.ElementType | null;
 }
-export default function mergeClasses(options?: MergeClassesOption): Classes;
+export type mergeClasses = (options?: MergeClassesOption) => Classes;
+export default mergeClasses;

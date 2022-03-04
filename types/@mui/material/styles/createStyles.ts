@@ -1,1 +1,2 @@
-export default function createStyles(styles: any): never;
+export type createStyles = (styles: any) => never;
+export default createStyles;

@@ -26,4 +26,5 @@ export interface DialogTitleProps extends StandardProps<React.HTMLAttributes<HTM
  *
  * - [DialogTitle API](https://mui.com/api/dialog-title/)
  */
-export default function DialogTitle(props: DialogTitleProps): JSX.Element;
+export type DialogTitle = (props: DialogTitleProps) => JSX.Element;
+export default DialogTitle;

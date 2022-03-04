@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outFile": "../../mui-core.d.ts"
+        "outFile": "../../dist/mui.d.ts"
     },
     "extends": "../tsconfig.json"
 }

@@ -98,4 +98,5 @@ export interface SpeedDialProps extends StandardProps<React.HTMLAttributes<HTMLD
  *
  * - [SpeedDial API](https://mui.com/api/speed-dial/)
  */
-export default function SpeedDial(props: SpeedDialProps): JSX.Element;
+export type SpeedDial = (props: SpeedDialProps) => JSX.Element;
+export default SpeedDial;

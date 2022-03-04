@@ -21,4 +21,5 @@ export interface TextareaAutosizeProps extends Omit<React.TextareaHTMLAttributes
  *
  * - [TextareaAutosize API](https://mui.com/api/textarea-autosize/)
  */
-export default function TextareaAutosize(props: TextareaAutosizeProps): JSX.Element;
+export type TextareaAutosize = (props: TextareaAutosizeProps) => JSX.Element;
+export default  TextareaAutosize;

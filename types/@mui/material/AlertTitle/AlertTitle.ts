@@ -26,4 +26,5 @@ export interface AlertTitleProps extends StandardProps<React.HTMLAttributes<HTML
  *
  * - [AlertTitle API](https://mui.com/api/alert-title/)
  */
-export default function AlertTitle(props: AlertTitleProps): JSX.Element;
+export type AlertTitle = (props: AlertTitleProps) => JSX.Element;
+export default AlertTitle;

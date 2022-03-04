@@ -48,4 +48,5 @@ export declare type StepContentClasskey = keyof NonNullable<StepContentProps['cl
  *
  * - [StepContent API](https://mui.com/api/step-content/)
  */
-export default function StepContent(props: StepContentProps): JSX.Element;
+export type StepContent = (props: StepContentProps) => JSX.Element;
+export default StepContent;

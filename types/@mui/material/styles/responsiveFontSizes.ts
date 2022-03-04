@@ -7,4 +7,5 @@ export interface ResponsiveFontSizesOptions {
     factor?: number;
     variants?: Variant[];
 }
-export default function responsiveFontSizes(theme: Theme, options?: ResponsiveFontSizesOptions): Theme;
+export type responsiveFontSizes = (theme: Theme, options?: ResponsiveFontSizesOptions) => Theme;
+export default responsiveFontSizes;

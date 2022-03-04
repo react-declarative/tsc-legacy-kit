@@ -58,4 +58,5 @@ export interface SwitchProps extends StandardProps<SwitchBaseProps, 'checkedIcon
  * - [Switch API](https://mui.com/api/switch/)
  * - inherits [IconButton API](https://mui.com/api/icon-button/)
  */
-export default function Switch(props: SwitchProps): JSX.Element;
+export type Switch = (props: SwitchProps) => JSX.Element;
+export default Switch;

@@ -65,4 +65,5 @@ export interface CircularProgressProps extends StandardProps<React.HTMLAttribute
  *
  * - [CircularProgress API](https://mui.com/api/circular-progress/)
  */
-export default function CircularProgress(props: CircularProgressProps): JSX.Element;
+export type CircularProgress = (props: CircularProgressProps) => JSX.Element;
+export default CircularProgress;

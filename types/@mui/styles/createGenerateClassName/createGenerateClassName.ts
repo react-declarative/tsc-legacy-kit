@@ -4,4 +4,5 @@ export interface GenerateClassNameOptions {
     productionPrefix?: string;
     seed?: string;
 }
-export default function createGenerateClassName(options?: GenerateClassNameOptions): GenerateId;
+export type createGenerateClassName = (options?: GenerateClassNameOptions) => GenerateId;
+export default createGenerateClassName;

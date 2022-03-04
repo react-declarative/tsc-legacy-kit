@@ -68,4 +68,5 @@ export interface StyledComponentProps<ClassKey extends string = string> {
      */
     classes?: Partial<ClassNameMap<ClassKey>>;
 }
-export default function withStyles<StylesType extends Styles<any, any>, Options extends WithStylesOptions<ThemeOfStyles<StylesType>> = {}>(style: StylesType, options?: Options): PropInjector<WithStyles<StylesType, Options['withTheme']>, StyledComponentProps<ClassKeyOfStyles<StylesType>> & PropsOfStyles<StylesType>>;
+export type withStyles = <StylesType extends Styles<any, any>, Options extends WithStylesOptions<ThemeOfStyles<StylesType>> = {}>(style: StylesType, options?: Options) => PropInjector<WithStyles<StylesType, Options['withTheme']>, StyledComponentProps<ClassKeyOfStyles<StylesType>> & PropsOfStyles<StylesType>>;
+export default withStyles;

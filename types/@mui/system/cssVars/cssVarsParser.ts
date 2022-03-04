@@ -58,13 +58,14 @@ export declare const walkObjectDeep: <Value, T = Record<string, any>>(obj: T, ca
  * console.log(vars) // { fontSize: '--foo-fontSize', lineHeight: '--foo-lineHeight', palette: { primary: { 500: 'var(--foo-palette-primary-500)' } } }
  * console.log(parsedTheme) // { fontSize: 12, lineHeight: 1.2, palette: { primary: { 500: 'var(--foo-color)' } } }
  */
-export default function cssVarsParser<T extends Record<string, any>>(theme: T, options?: {
+export type cssVarsParser = <T extends Record<string, any>>(theme: T, options?: {
     prefix?: string;
     basePrefix?: string;
     shouldSkipGeneratingVar?: (objectPathKeys: Array<string>, value: string | number) => boolean;
-}): {
+}) => {
     css: NestedRecord<string>;
     vars: NestedRecord<string>;
     parsedTheme: T;
 };
+export default cssVarsParser;
 export {};

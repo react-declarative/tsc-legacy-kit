@@ -4,4 +4,5 @@
  *
  * @param object An object to extract event handlers from.
  */
-export default function extractEventHandlers(object: Record<string, any> | undefined, excludeKeys?: string[]): Record<string, any>;
+export type extractEventHandlers = (object: Record<string, any> | undefined, excludeKeys?: string[]) => Record<string, any>;
+export default  extractEventHandlers;

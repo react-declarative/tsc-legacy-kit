@@ -74,4 +74,5 @@ export declare type SortDirection = 'asc' | 'desc' | false;
  *
  * - [TableCell API](https://mui.com/api/table-cell/)
  */
-export default function TableCell(props: TableCellProps): JSX.Element;
+export type TableCell = (props: TableCellProps) => JSX.Element;
+export default TableCell;

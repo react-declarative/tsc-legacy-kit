@@ -60,7 +60,7 @@ export interface SliderUnstyledTypeMap<P = {}, D extends React.ElementType = 'sp
             thumb?: React.ComponentPropsWithRef<'span'> & SliderUnstyledComponentsPropsOverrides;
             mark?: React.ComponentPropsWithRef<'span'> & SliderUnstyledComponentsPropsOverrides;
             markLabel?: React.ComponentPropsWithRef<'span'> & SliderUnstyledComponentsPropsOverrides;
-            valueLabel?: React.ComponentPropsWithRef<typeof SliderValueLabelUnstyled> & SliderUnstyledComponentsPropsOverrides;
+            valueLabel?: React.ComponentPropsWithRef<SliderValueLabelUnstyled> & SliderUnstyledComponentsPropsOverrides;
             input?: React.ComponentPropsWithRef<'input'> & SliderUnstyledComponentsPropsOverrides;
         };
         /**

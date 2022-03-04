@@ -80,4 +80,5 @@ export interface FormControlLabelProps extends StandardProps<React.LabelHTMLAttr
  *
  * - [FormControlLabel API](https://mui.com/api/form-control-label/)
  */
-export default function FormControlLabel(props: FormControlLabelProps): JSX.Element;
+export type FormControlLabel = (props: FormControlLabelProps) => JSX.Element;
+export default FormControlLabel;

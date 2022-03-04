@@ -256,4 +256,5 @@ export declare type TextFieldProps = StandardTextFieldProps | FilledTextFieldPro
  * - [TextField API](https://mui.com/api/text-field/)
  * - inherits [FormControl API](https://mui.com/api/form-control/)
  */
-export default function TextField(props: TextFieldProps): JSX.Element;
+export type TextField = (props: TextFieldProps) => JSX.Element;
+export default TextField;

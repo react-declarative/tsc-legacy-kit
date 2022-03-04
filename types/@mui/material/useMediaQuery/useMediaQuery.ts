@@ -28,4 +28,5 @@ export interface Options {
         matches: boolean;
     };
 }
-export default function useMediaQuery<Theme = unknown>(queryInput: string | ((theme: Theme) => string), options?: Options): boolean;
+export type useMediaQuery = <Theme = unknown>(queryInput: string | ((theme: Theme) => string), options?: Options) => boolean;
+export default useMediaQuery;

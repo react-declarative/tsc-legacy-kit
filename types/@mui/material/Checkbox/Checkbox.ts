@@ -104,4 +104,5 @@ export interface CheckboxProps extends StandardProps<SwitchBaseProps, 'checkedIc
  * - [Checkbox API](https://mui.com/api/checkbox/)
  * - inherits [ButtonBase API](https://mui.com/api/button-base/)
  */
-export default function Checkbox(props: CheckboxProps): JSX.Element;
+export type Checkbox = (props: CheckboxProps) => JSX.Element;
+export default Checkbox;

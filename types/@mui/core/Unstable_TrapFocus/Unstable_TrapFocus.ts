@@ -60,4 +60,5 @@ export interface TrapFocusProps {
  *
  * - [Unstable_TrapFocus API](https://mui.com/api/unstable-trap-focus/)
  */
-export default function Unstable_TrapFocus(props: TrapFocusProps): JSX.Element;
+export type Unstable_TrapFocus = (props: TrapFocusProps) => JSX.Element;
+export default Unstable_TrapFocus;

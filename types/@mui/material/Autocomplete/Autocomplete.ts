@@ -32,14 +32,14 @@ export interface AutocompleteRenderInputParams {
     disabled: boolean;
     fullWidth: boolean;
     size: 'small' | undefined;
-    InputLabelProps: ReturnType<ReturnType<typeof useAutocomplete>['getInputLabelProps']>;
+    InputLabelProps: ReturnType<ReturnType<useAutocomplete>['getInputLabelProps']>;
     InputProps: {
         ref: React.Ref<any>;
         className: string;
         startAdornment: React.ReactNode;
         endAdornment: React.ReactNode;
     };
-    inputProps: ReturnType<ReturnType<typeof useAutocomplete>['getInputProps']>;
+    inputProps: ReturnType<ReturnType<useAutocomplete>['getInputProps']>;
 }
 export interface AutocompletePropsSizeOverrides {
 }
@@ -115,7 +115,7 @@ export interface AutocompleteProps<T, Multiple extends boolean | undefined, Disa
     /**
      * Props applied to the Listbox element.
      */
-    ListboxProps?: ReturnType<ReturnType<typeof useAutocomplete>['getListboxProps']>;
+    ListboxProps?: ReturnType<ReturnType<useAutocomplete>['getListboxProps']>;
     /**
      * If `true`, the component is in a loading state.
      * This shows the `loadingText` in place of suggestions (only if there are no suggestions to show, e.g. `options` are empty).
@@ -220,4 +220,5 @@ export interface AutocompleteProps<T, Multiple extends boolean | undefined, Disa
  *
  * - [Autocomplete API](https://mui.com/api/autocomplete/)
  */
-export default function Autocomplete<T, Multiple extends boolean | undefined = undefined, DisableClearable extends boolean | undefined = undefined, FreeSolo extends boolean | undefined = undefined>(props: AutocompleteProps<T, Multiple, DisableClearable, FreeSolo>): JSX.Element;
+export type Autocomplete = <T, Multiple extends boolean | undefined = undefined, DisableClearable extends boolean | undefined = undefined, FreeSolo extends boolean | undefined = undefined>(props: AutocompleteProps<T, Multiple, DisableClearable, FreeSolo>) => JSX.Element;
+export default Autocomplete;

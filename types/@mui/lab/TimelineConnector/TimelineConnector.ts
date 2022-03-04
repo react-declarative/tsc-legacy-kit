@@ -27,4 +27,5 @@ export interface TimelineConnectorProps extends StandardProps<React.HTMLAttribut
  *
  * - [TimelineConnector API](https://mui.com/api/timeline-connector/)
  */
-export default function TimelineConnector(props: TimelineConnectorProps): JSX.Element;
+export type TimelineConnector = (props: TimelineConnectorProps) => JSX.Element;
+export default TimelineConnector;

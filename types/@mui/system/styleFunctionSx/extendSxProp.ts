@@ -1,4 +1,5 @@
 import { SxProps } from './styleFunctionSx';
-export default function extendSxProp<Props extends {
+export type extendSxProp = <Props extends {
     sx?: SxProps<any>;
-} = {}>(props: Props): Props;
+} = {}>(props: Props) => Props;
+export default extendSxProp;

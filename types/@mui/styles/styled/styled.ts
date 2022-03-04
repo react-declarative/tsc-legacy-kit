@@ -15,4 +15,5 @@ export declare type ComponentCreator<Component extends React.ElementType> = <The
 export interface StyledProps {
     className: string;
 }
-export default function styled<Component extends React.ElementType>(Component: Component): ComponentCreator<Component>;
+export type styled = <Component extends React.ElementType>(Component: Component) => ComponentCreator<Component>;
+export default styled;

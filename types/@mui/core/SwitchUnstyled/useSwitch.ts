@@ -65,4 +65,5 @@ export interface UseSwitchProps {
  *
  * - [Switches](https://mui.com/components/switches/)
  */
-export default function useSwitch(props: UseSwitchProps): UseSwitchResult;
+export type useSwitch = (props: UseSwitchProps) => UseSwitchResult;
+export default useSwitch;

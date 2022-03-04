@@ -1,1 +1,2 @@
-export default function useFormControlUnstyled(): import("./FormControlContext").FormControlUnstyledState | undefined;
+export type useFormControlUnstyled = () => import("./FormControlContext").FormControlUnstyledState | undefined;
+export default useFormControlUnstyled;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { UseInputProps } from './InputUnstyledProps';
-export default function useInput(props: UseInputProps, inputRef?: React.Ref<HTMLInputElement>): {
+export type useInput = (props: UseInputProps, inputRef?: React.Ref<HTMLInputElement>) => {
     disabled: boolean;
     error: boolean;
     focused: boolean;
@@ -19,3 +19,4 @@ export default function useInput(props: UseInputProps, inputRef?: React.Ref<HTML
     required: boolean;
     value: unknown;
 };
+export default useInput;

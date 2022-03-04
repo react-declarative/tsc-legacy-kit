@@ -55,4 +55,5 @@ export declare type StepClasskey = keyof NonNullable<StepProps['classes']>;
  *
  * - [Step API](https://mui.com/api/step/)
  */
-export default function Step(props: StepProps): JSX.Element;
+export type Step = (props: StepProps) => JSX.Element;
+export default Step;

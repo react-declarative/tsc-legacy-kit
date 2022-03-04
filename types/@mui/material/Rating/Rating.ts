@@ -120,4 +120,5 @@ export interface RatingProps extends StandardProps<React.HTMLAttributes<HTMLSpan
  *
  * - [Rating API](https://mui.com/api/rating/)
  */
-export default function Rating(props: RatingProps): JSX.Element;
+export type Rating = (props: RatingProps) => JSX.Element;
+export default Rating;

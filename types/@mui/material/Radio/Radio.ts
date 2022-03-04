@@ -54,4 +54,5 @@ export interface RadioProps extends StandardProps<SwitchBaseProps, 'checkedIcon'
  * - [Radio API](https://mui.com/api/radio/)
  * - inherits [ButtonBase API](https://mui.com/api/button-base/)
  */
-export default function Radio(props: RadioProps): JSX.Element;
+export type Radio = (props: RadioProps) => JSX.Element;
+export default Radio;

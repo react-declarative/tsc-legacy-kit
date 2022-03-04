@@ -78,4 +78,5 @@ export interface ToggleButtonGroupProps extends StandardProps<React.HTMLAttribut
  *
  * - [ToggleButtonGroup API](https://mui.com/api/toggle-button-group/)
  */
-export default function ToggleButtonGroup(props: ToggleButtonGroupProps): JSX.Element;
+export type ToggleButtonGroup = (props: ToggleButtonGroupProps) => JSX.Element;
+export default ToggleButtonGroup;

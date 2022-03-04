@@ -89,4 +89,5 @@ export interface PopperProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 
  *
  * - [Popper API](https://mui.com/api/popper/)
  */
-export default function Popper(props: PopperProps): JSX.Element;
+export type Popper = (props: PopperProps) => JSX.Element;
+export default Popper

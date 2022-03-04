@@ -7,4 +7,5 @@ export interface Spacing {
     (top: SpacingArgument, rightLeft: SpacingArgument, bottom: SpacingArgument): string;
     (top: SpacingArgument, right: SpacingArgument, bottom: SpacingArgument, left: SpacingArgument): string;
 }
-export default function createSpacing(spacingInput?: SpacingOptions): Spacing;
+export type createSpacing = (spacingInput?: SpacingOptions) => Spacing;
+export default createSpacing;

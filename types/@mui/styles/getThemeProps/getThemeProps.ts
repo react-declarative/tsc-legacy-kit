@@ -11,8 +11,9 @@ declare type ThemedProps<Theme, Name extends keyof any> = Theme extends {
         defaultProps: infer Props;
     }>;
 } ? Props : {};
-export default function getThemeProps<Theme extends ThemeWithProps<any>, Props, Name extends keyof any>(params: {
+export type getThemeProps = <Theme extends ThemeWithProps<any>, Props, Name extends keyof any>(params: {
     props: Props;
     name: Name;
     theme?: Theme;
-}): Props & ThemedProps<Theme, Name>;
+}) => Props & ThemedProps<Theme, Name>;
+export default getThemeProps;
