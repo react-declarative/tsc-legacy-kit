@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "moduleResolution": "classic",
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "lib": ["es2018", "dom"],
+    "outFile": "./dist/example-app.js",
+    "rootDir": "./src/",
+    "baseUrl": "./",
+    "types": [],
+    "typeRoots": [
+      "./types",
+    ],
+  },
+  "exclude": [
+    "./dist/*",
+  ],
+  "include": [
+    "./types",
+    "./src",
+  ],
+}
