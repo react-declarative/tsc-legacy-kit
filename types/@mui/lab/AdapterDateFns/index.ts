@@ -1,1 +1,2 @@
-export { default } from '@date-io/date-fns';
+export type AdapterDateFns = any;
+export default AdapterDateFns;

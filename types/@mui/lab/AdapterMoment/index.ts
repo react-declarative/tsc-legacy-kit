@@ -1,1 +1,2 @@
-export { default } from '@date-io/moment';
+export type AdapterMoment = any;
+export default AdapterMoment;

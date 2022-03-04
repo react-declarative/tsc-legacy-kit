@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { DateIOFormats, IUtils } from '@date-io/core/IUtils';
-export declare type MuiPickersAdapter<TDate> = IUtils<TDate>;
+export declare type MuiPickersAdapter<TDate> = any;
 export interface MuiPickersAdapterContextValue<TDate> {
     defaultDates: {
         minDate: TDate;
@@ -14,7 +13,7 @@ export interface LocalizationProviderProps {
     /** DateIO adapter class function */
     dateAdapter: new (...args: any) => MuiPickersAdapter<unknown>;
     /** Formats that are used for any child pickers */
-    dateFormats?: Partial<DateIOFormats>;
+    dateFormats?: any;
     /**
      * Date library instance you are using, if it has some global overrides
      * ```jsx

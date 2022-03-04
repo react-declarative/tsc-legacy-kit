@@ -1,1 +1,2 @@
-export { default } from '@date-io/luxon';
+export type AdapterLuxon = any;
+export default AdapterLuxon;

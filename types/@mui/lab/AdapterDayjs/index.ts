@@ -1,1 +1,2 @@
-export { default } from '@date-io/dayjs';
+export type AdapterDayjs = any;
+export default AdapterDayjs;
