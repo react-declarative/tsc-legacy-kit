@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outFile": "./_dist/@emotion.d.ts",
+    },
+    "exclude": [
+        "./_dist/@emotion.d.ts",
+    ],
+    "extends": "../tsconfig.json"
+}

@@ -70,7 +70,7 @@
             "@emotion/react/*": [ "./@emotion/react/*" ],
             "@emotion/styled": [ "./@emotion/styled" ],
             "@emotion/styled/*": [ "./@emotion/styled/*" ],
-            /*"@date-io/core": [ "./@date-io/core" ],
+            "@date-io/core": [ "./@date-io/core" ],
             "@date-io/core/*": [ "./@date-io/core/*" ],
             "@date-io/date-fns": [ "./@date-io/date-fns" ],
             "@date-io/date-fns/*": [ "./@date-io/date-fns/*" ],
@@ -79,7 +79,7 @@
             "@date-io/luxon": [ "./@date-io/luxon" ],
             "@date-io/luxon/*": [ "./@date-io/luxon/*" ],
             "@date-io/moment": [ "./@date-io/moment" ],
-            "@date-io/moment/*": [ "./@date-io/moment/*" ],*/
+            "@date-io/moment/*": [ "./@date-io/moment/*" ],
             "@popperjs/core": [ "./@popperjs/core" ],
             "@popperjs/core/*": [ "./@popperjs/core/*" ],
             "prop-types": [ "./@types/prop-types" ],
@@ -99,8 +99,5 @@
     "exclude": [
         "node_modules/@types/*",
         "node_modules/*"
-    ],
-    "include": [
-        "./@date-io/_dist/@date-io.d.ts",
     ],
 }
